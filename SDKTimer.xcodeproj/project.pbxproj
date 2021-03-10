@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2D25E2FD25F96374006B662B /* SDKTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D25E2FB25F96374006B662B /* SDKTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D25E30525F96392006B662B /* OutputTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25E30425F96392006B662B /* OutputTimerView.swift */; };
+		2D25E30825F9659E006B662B /* SDKTimer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2D25E30725F9659E006B662B /* SDKTimer.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D25E2F825F96374006B662B /* SDKTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDKTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D25E2FB25F96374006B662B /* SDKTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKTimer.h; sourceTree = "<group>"; };
 		2D25E2FC25F96374006B662B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D25E30425F96392006B662B /* OutputTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputTimerView.swift; sourceTree = "<group>"; };
+		2D25E30725F9659E006B662B /* SDKTimer.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDKTimer.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 		2D25E2EE25F96374006B662B = {
 			isa = PBXGroup;
 			children = (
+				2D25E30725F9659E006B662B /* SDKTimer.podspec */,
 				2D25E2FA25F96374006B662B /* SDKTimer */,
 				2D25E2F925F96374006B662B /* Products */,
 			);
@@ -46,6 +51,7 @@
 		2D25E2FA25F96374006B662B /* SDKTimer */ = {
 			isa = PBXGroup;
 			children = (
+				2D25E30425F96392006B662B /* OutputTimerView.swift */,
 				2D25E2FB25F96374006B662B /* SDKTimer.h */,
 				2D25E2FC25F96374006B662B /* Info.plist */,
 			);
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					2D25E2F725F96374006B662B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -120,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D25E30825F9659E006B662B /* SDKTimer.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D25E30525F96392006B662B /* OutputTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +149,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -204,6 +214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -261,6 +272,8 @@
 		2D25E30125F96374006B662B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 69KP7AWB28;
@@ -277,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VitorSpessoto.SDKTimer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +299,8 @@
 		2D25E30225F96374006B662B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 69KP7AWB28;
