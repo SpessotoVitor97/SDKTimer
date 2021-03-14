@@ -1,0 +1,11 @@
+framework module SDKTimer {
+  umbrella header "SDKTimer.h"
+
+  export *
+  module * { export * }
+}
+
+module SDKTimer.Swift {
+    header "SDKTimer-Swift.h"
+    requires objc
+}
